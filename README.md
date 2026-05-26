@@ -8,7 +8,7 @@ Unofficial Ubuntu/Debian apt repository for [Zen Browser](https://zen-browser.ap
 ```bash
 curl -fsSL [https://raw.githubusercontent.com/gautam9981/zen-browser-repo-deb/main/docs/key.gpg](https://raw.githubusercontent.com/gautam9981/zen-browser-repo-deb/main/docs/key.gpg) | sudo gpg --dearmor -o /etc/apt/keyrings/zen-browser.gpg
 
-echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/zen-browser.gpg] [https://raw.githubusercontent.com/gautam9981/zen-browser-repo-deb/main/docs](https://raw.githubusercontent.com/gautam9981/zen-browser-repo-deb/main/docs) stable main" | sudo tee /etc/apt/sources.list.d/zen-browser.list
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/zen-browser.gpg] https://raw.githubusercontent.com/gautam9981/zen-browser-repo-deb/main/docs stable main" | sudo tee /etc/apt/sources.list.d/zen-browser.list
 
 ```
 
